@@ -1,6 +1,6 @@
 function testiminial_shortcode($attr){
 
-$testimonial_obj = new WP_Query(array('post_type' => 'testimonial', 'post_per_page' => $attr['limit']));
+$testimonial_obj = new WP_Query(array('post_type' => 'testimonial', 'posts_per_page' => $attr['limit']));
 	
 $testiVar = '';
 $testiVar .= '<div class="testimonials">';
